@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopx/common/style.dart';
 
 class FavoritePage extends StatefulWidget {
   const FavoritePage({ Key key }) : super(key: key);
@@ -10,8 +11,13 @@ class FavoritePage extends StatefulWidget {
 class _FavoritePageState extends State<FavoritePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Favorite'),
+        centerTitle: true,
+        backgroundColor: ColorStyles.secondaryColor,
+      ),
+      backgroundColor: ColorStyles.primaryColor,
     );
   }
 }

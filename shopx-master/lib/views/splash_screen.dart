@@ -37,13 +37,13 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 140,
               height: 140,
             ),
-            Text(
-              'Beauty Shining',
-              // style: GoogleFonts.smooch(
-              //   fontSize: 34,
-              //   color: ColorStyles.primaryColor,
-              // ),
-            ),
+            // Text(
+            //   'Beauty Shining',
+            //   // style: GoogleFonts.smooch(
+            //   //   fontSize: 34,
+            //   //   color: ColorStyles.primaryColor,
+            //   // ),
+            // ),
           ],
         ),
       ),
