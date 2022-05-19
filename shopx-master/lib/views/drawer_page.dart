@@ -19,11 +19,11 @@ class _DrawerPageState extends State<DrawerPage> {
       child: ListView(
         children: <Widget>[
           UserAccountsDrawerHeader(
-            accountName: Text("Beauty"),
+            accountName: Text("Beauty", style: TextStyle(fontSize: 20),),
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage("assets/images/user.png"),
             ),
-            accountEmail: Text("Shining"),
+            accountEmail: Text("Shining", style: TextStyle(fontSize: 20),),
             decoration: BoxDecoration(
               color: ColorStyles.secondaryColor,
             ),

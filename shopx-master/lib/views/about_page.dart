@@ -15,6 +15,7 @@ class AboutPage extends StatelessWidget {
       backgroundColor: ColorStyles.primaryColor,
       body: Column(
         children: [
+          SizedBox(height: 20,),
           ClipRRect(
             borderRadius: const BorderRadius.vertical(
               bottom: Radius.circular(10),
@@ -35,14 +36,14 @@ class AboutPage extends StatelessWidget {
 
   Widget tittleSection(){
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.only(top: 15),
       child: Row(
         children: [
           Expanded(
             child: Center(
               child: const Text(
                 'Beauty Shining', 
-                style:  TextStyle(fontWeight: FontWeight.bold),
+                style:  TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),
               ),
             ),
           ),
@@ -53,10 +54,14 @@ class AboutPage extends StatelessWidget {
 
   Widget textSection(){
     return const Padding(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(15),
       child: Center(
         child: Text(
-          'Aplikasi ini ini bertema “kecantikan” didalam aplikasi ini berisi perkumpulan produk yang menunjang penampilan serta perawatan kulit, produk tersebut berasal dari berbagai brand. Aplikasi ini bisa di akses oleh kaum wanita ataupun kaum pria yang peduli akan penampilannya.'
+          'Aplikasi ini ini bertema “kecantikan” didalam aplikasi ini berisi perkumpulan produk yang menunjang penampilan serta perawatan kulit, produk tersebut berasal dari berbagai brand. Aplikasi ini bisa di akses oleh kaum wanita ataupun kaum pria yang peduli akan penampilannya.', 
+          style: TextStyle(
+            fontSize: 16,
+          ),
+          textAlign: TextAlign.justify,
         ),
       ),
     );
